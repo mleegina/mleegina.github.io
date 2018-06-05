@@ -1,0 +1,244 @@
+/*------------------------------------*\
+ * - 1. Global base settings
+ * - 2. Object wrappers
+ * - 3. Text helpers
+ * - 4. Footer
+ * - 5. Keyframe animations
+
+
+  1. BASE-SETTINGS
+\*------------------------------------*/
+
+* { margin: 0; padding: 0; }
+
+h1 {
+    font-family: 'Lustria', serif;
+    font-weight: 100;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Lustria', serif;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+}
+
+body { font-family: 'Lato', sans-serif; }
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/*------------------------------------*\
+  2. OBJECT WRAPPERS
+\*------------------------------------*/
+
+.container { margin: 0 15%; }
+
+#landing {
+    position: relative;
+    height: 100vh;
+    padding-bottom: 1em;
+}
+
+#welcome {
+    position: absolute;
+    margin-top: 35%;
+}
+
+#projects-list { padding: 1em 0 7em 0; }
+
+.project-content {
+    padding: 3em 0;
+    font-weight: bold;
+}
+
+.project-end {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+
+
+
+
+/*------------------------------------*\
+  3. TEXT HELPERS
+\*------------------------------------*/
+
+h2 span {
+    border-bottom: 1px solid black;
+    padding-bottom: .2em;
+}
+
+#underline {
+    border-bottom: 1px solid black;
+    padding-bottom: 1.2em;
+}
+
+#favorites { font-weight: bold; }
+
+#heart { font-size: .8em; }
+
+.highlight {
+    display: inline-block;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50%,  #FFF7F7 50%);
+    transition: background-position 1s;
+}
+.highlight-white {
+    display: inline-block;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #FFF7F7 50%, white  50%);
+    transition: background-position 1s;
+}
+
+a:hover .highlight,
+a:hover .highlight-white { background-position: -100% 0; }
+
+.row {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    
+}
+
+    .row a {
+        display: block;
+        padding: 2em 0;
+    }
+
+    .row p { float: right; }
+
+    .row h3 { display:inline; }
+
+#fade-top { animation: fade-in-down 1s cubic-bezier(0.335, 0.070, 0.000, 1.060); }
+
+#fade-bottom { animation: fade-in-up 1.2s ease; }
+
+.slide {
+    transform: translateY(250px);
+    animation: slide-up 0.8s ease forwards;
+
+}
+
+.project-header {
+    border-bottom: 1px solid black;
+    padding: 6em 0 1.5em 0;
+}
+
+    .project-header h1 {
+        padding-bottom: .5em;
+        animation: fade-in-down 1s cubic-bezier(0.335, 0.070, 0.000, 1.060);
+    }
+
+    .project-header p { display: inline-block; }
+
+.button {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 1em 3em;
+}
+
+
+
+
+
+/*------------------------------------*\
+  4. FOOTER
+\*------------------------------------*/
+
+footer {
+    position: relative;
+    background: #FFF7F7;
+    padding: 7em 0;
+    z-index: 2;
+}
+
+.contact {
+    padding-top: 3em;
+    align-items: center;
+}
+
+.email { display: inline-block; }
+
+.social-links { float:right; }
+
+    .social-links a {
+        display: inline-block;
+        padding-left: 1em;
+    }
+
+.grow {
+    opacity: .5;
+    transition: all .2s ease-in-out;
+}
+    .grow:hover {
+        display: block;
+        opacity: .9;
+        transform: scale(1.2);
+    }
+
+@media only screen and (max-width:600px) {
+
+    footer { padding-bottom: 9em; }
+
+    .email { display: block; }
+
+    .social-links {
+        display: block;
+        float:left;
+        padding-top:2em;
+    }
+
+    .social-links a {
+        padding-left:0;
+        padding-right:1em;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  5. KEYFRAMES
+\*------------------------------------*/
+
+@keyframes fade-in-up {
+    from { 
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to   { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes fade-in-down {
+    from { 
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to   { 
+        opacity: 1;
+        transform: translateY(0); }
+}
+
+@keyframes slide-up {
+    to { transform: translateY(0); }
+}
+
+
