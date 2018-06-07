@@ -9,236 +9,383 @@
   1. BASE-SETTINGS
 \*------------------------------------*/
 
-* { margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
-    font-family: 'Lustria', serif;
-    font-weight: 100;
-    font-size: 3em;
+  font-family: "Lustria", serif;
+  font-weight: 100;
+  font-size: 3em;
 }
 
 h2 {
-    font-family: 'Lustria', serif;
-    font-weight: 100;
-    font-size: 1.5em;
+  font-family: "Lustria", serif;
+  font-weight: 100;
+  font-size: 1.5em;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.3em;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
 }
 
-body { font-family: 'Lato', sans-serif; }
-
-a, a:hover, a:visited {
-    text-decoration: none;
-    color: black;
+body {
+  font-family: "Lato", sans-serif;
 }
 
-
-
-
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: darkgray;
+}
 
 /*------------------------------------*\
   2. OBJECT WRAPPERS
 \*------------------------------------*/
 
-.container { margin: 0 15%; }
+.container {
+  margin: 0 15%;
+}
 
 #landing {
-    position: relative;
-    height: 100vh;
-    padding-bottom: 1em;
+  position: relative;
+  height: 100vh;
+  padding-bottom: 1em;
 }
 
 #welcome {
-    position: absolute;
-    margin-top: 35%;
+  position: absolute;
+  margin-top: 30%;
 }
 
-#projects-list { padding: 1em 0 7em 0; }
+#projects-list {
+  padding: 1em 0 9em 0;
+}
 
 .project-content {
-    padding: 3em 0;
-    font-weight: bold;
+  padding: 3em 0;
+  font-weight: bold;
 }
 
 .project-end {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 5em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5em;
 }
 
+.demo {
+  max-width: 900px;
+  padding-bottom: 2em;
+  position: relative;
+  margin: 0 auto;
+  -webkit-animation: fade-in-up 3s cubic-bezier(0.335, 0.07, 0, 1.06);
+  animation: fade-in-up 3s cubic-bezier(0.335, 0.07, 0, 1.06);
+}
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
-
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 2em 0;
+}
 
 /*------------------------------------*\
   3. TEXT HELPERS
 \*------------------------------------*/
 
 h2 span {
-    border-bottom: 1px solid black;
-    padding-bottom: .2em;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.2em;
 }
 
 #underline {
-    border-bottom: 1px solid black;
-    padding-bottom: 1.2em;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.2em;
 }
 
-#favorites { font-weight: bold; }
+#favorites {
+  font-weight: bold;
+  font-size: 1.4em;
+}
 
-#heart { font-size: .8em; }
+#heart {
+  font-size: 0.8em;
+}
+
+#welcome h1 {
+  font-size: 5em;
+}
+
+#welcome h3 {
+  font-size: 2.3em;
+}
 
 .highlight {
-    display: inline-block;
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%,  #FFF7F7 50%);
-    transition: background-position 1s;
+  display: inline-block;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, white 50%, #ffeaea 50%);
+  transition: background-position 1s;
 }
 .highlight-white {
-    display: inline-block;
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, #FFF7F7 50%, white  50%);
-    transition: background-position 1s;
+  display: inline-block;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #ffeaea 50%, white 50%);
+  transition: background-position 1s;
 }
 
 a:hover .highlight,
-a:hover .highlight-white { background-position: -100% 0; }
-
-.row {
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid black;
-    
+a:hover .highlight-white {
+  background-position: -100% 0;
 }
 
-    .row a {
-        display: block;
-        padding: 2em 0;
-    }
+.row {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
 
-    .row p { float: right; }
+.row a {
+  display: block;
+  padding: 2em 0;
+}
 
-    .row h3 { display:inline; }
+.row p {
+  float: right;
+}
 
-#fade-top { animation: fade-in-down 1s cubic-bezier(0.335, 0.070, 0.000, 1.060); }
+.row h3 {
+  display: inline;
+}
 
-#fade-bottom { animation: fade-in-up 1.2s ease; }
+#fade-top {
+  -webkit-animation: fade-in-down 1s cubic-bezier(0.335, 0.07, 0, 1.06);
+  animation: fade-in-down 1s cubic-bezier(0.335, 0.07, 0, 1.06);
+}
+
+#fade-bottom {
+  -webkit-animation: fade-in-up 1.2s ease;
+  animation: fade-in-up 1.2s ease;
+}
 
 .slide {
-    transform: translateY(250px);
-    animation: slide-up 0.8s ease forwards;
-
+  -webkit-transform: translateY(250px);
+  -ms-transform: translateY(250px);
+  transform: translateY(250px);
+  -webkit-animation: slide-up 0.8s ease forwards;
+  animation: slide-up 0.8s ease forwards;
 }
 
 .project-header {
-    border-bottom: 1px solid black;
-    padding: 6em 0 1.5em 0;
+  border-bottom: 1px solid black;
+  padding: 6em 0 1.5em 0;
+  -webkit-animation: fade-in-down 1s cubic-bezier(0.335, 0.07, 0, 1.06);
+  animation: fade-in-down 1s cubic-bezier(0.335, 0.07, 0, 1.06);
 }
 
-    .project-header h1 {
-        padding-bottom: .5em;
-        animation: fade-in-down 1s cubic-bezier(0.335, 0.070, 0.000, 1.060);
-    }
+.project-header h1 {
+  padding-bottom: 0.5em;
+  /* -webkit-animation: fade-in-down 1s cubic-bezier(0.335, 0.07, 0, 1.06);
+  animation: fade-in-down 1s cubic-bezier(0.335, 0.07, 0, 1.06); */
+}
 
-    .project-header p { display: inline-block; }
+.project-header p {
+  display: inline-block;
+}
+
+.tags {
+  font-weight: bold;
+}
+
+.safari-ui {
+  box-shadow: 0px 3px 0px #d8d8d8;
+}
 
 .button {
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 1em 3em;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1em 3em;
 }
 
+@media only screen and (max-width: 400px) {
+  #favorites {
+    font-size: 1em;
+  }
 
+  #welcome h1 {
+    font-size: 3em;
+  }
 
+  #welcome h3 {
+    font-size: 1.3em;
+  }
+}
 
+@media only screen and (max-width: 550px) {
+  #projects-list .row p {
+    float: none;
+    padding-top: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .project-header .social-links {
+    float: none;
+    padding-top: 1em;
+  }
+  .project-header .social-links a {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+}
 
 /*------------------------------------*\
   4. FOOTER
 \*------------------------------------*/
 
 footer {
-    position: relative;
-    background: #FFF7F7;
-    padding: 7em 0;
-    z-index: 2;
+  position: relative;
+  background: #ffeaea;
+  padding: 7em 0;
+  z-index: 2;
 }
 
 .contact {
-    padding-top: 3em;
-    align-items: center;
+  padding-top: 3em;
+  align-items: center;
 }
 
-.email { display: inline-block; }
+.email {
+  display: inline-block;
+}
 
-.social-links { float:right; }
+.social-links {
+  float: right;
+}
 
-    .social-links a {
-        display: inline-block;
-        padding-left: 1em;
-    }
+.social-links a {
+  display: inline-block;
+  padding-left: 1em;
+}
 
 .grow {
-    opacity: .5;
-    transition: all .2s ease-in-out;
-}
-    .grow:hover {
-        display: block;
-        opacity: .9;
-        transform: scale(1.2);
-    }
-
-@media only screen and (max-width:600px) {
-
-    footer { padding-bottom: 9em; }
-
-    .email { display: block; }
-
-    .social-links {
-        display: block;
-        float:left;
-        padding-top:2em;
-    }
-
-    .social-links a {
-        padding-left:0;
-        padding-right:1em;
-    }
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
 }
 
+.grow:hover {
+  display: block;
+  opacity: 0.9;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
+@media only screen and (max-width: 600px) {
+  footer {
+    padding-bottom: 9em;
+  }
 
+  .email {
+    display: block;
+  }
 
+  .social-links {
+    display: block;
+    float: left;
+    padding-top: 2em;
+  }
+
+  .social-links a {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+}
 
 /*------------------------------------*\
   5. KEYFRAMES
 \*------------------------------------*/
+@-webkit-keyframes fade-in-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
 @keyframes fade-in-up {
-    from { 
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to   { 
-        opacity: 1;
-        transform: translateY(0); 
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fade-in-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @keyframes fade-in-down {
-    from { 
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to   { 
-        opacity: 1;
-        transform: translateY(0); }
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @keyframes slide-up {
-    to { transform: translateY(0); }
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
-
-
