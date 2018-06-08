@@ -14,6 +14,11 @@
   padding: 0;
 }
 
+body {
+  font-family: "Lato", sans-serif; 
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 h1 {
   font-family: "Lustria", serif;
   font-weight: 100;
@@ -31,15 +36,13 @@ h3 {
   font-size: 1.3em;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
-
 a,
-a:hover,
-a:visited {
+a:link,
+a:visited
+a:hover {
   text-decoration: none;
-  color: darkgray;
+  color: gray;
+  font-weight:bold;
 }
 
 /*------------------------------------*\
@@ -114,7 +117,7 @@ h2 span {
 }
 
 #favorites {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1.4em;
 }
 
@@ -133,13 +136,13 @@ h2 span {
 .highlight {
   display: inline-block;
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, white 50%, #ffeaea 50%);
+  background-image: linear-gradient(to right, white 50%, #fff0ea 50%);
   transition: background-position 1s;
 }
 .highlight-white {
   display: inline-block;
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, #ffeaea 50%, white 50%);
+  background-image: linear-gradient(to right, #fff0ea 50%, white 50%);
   transition: background-position 1s;
 }
 
@@ -161,6 +164,7 @@ a:hover .highlight-white {
 
 .row p {
   float: right;
+  color: black;
 }
 
 .row h3 {
@@ -254,7 +258,7 @@ a:hover .highlight-white {
 
 footer {
   position: relative;
-  background: #ffeaea;
+  background: #fff0ea;
   padding: 7em 0;
   z-index: 2;
 }
