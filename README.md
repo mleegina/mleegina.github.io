@@ -1,7 +1,7 @@
 # Personal portfolio 
 
 This is a responsive site designed to showcase work. It is built using CSS and 
-JavaScript and is hosted on AWS. View it live [here](geenah.com)!
+JavaScript and is hosted on AWS. View it live [here](http://geenah.com)!
 
 # Screenshot
 
