@@ -5,7 +5,7 @@ JavaScript and is hosted on AWS. View it live [here](geenah.com)!
 
 #Screenshots
 
-[[https://github.com/mleegina/geenah/blob/master/images/geenah.png]]
+![Screenshot of Page](https://github.com/mleegina/geenah/blob/master/images/geenah.png)
 
 #Reflection
 
