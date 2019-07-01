@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8">
+    <title>Psychedelicatessen</title>
+    <meta name="author" content="Gina Lee">
+    <meta name="description" content="Psychedelicatessen project page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat|Open+Sans:300,400,700" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124170044-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124170044-1');
+</script>
+
+
+
+</head>
+
+<body>
+    <div id="sticky-nav">
+        <div id="logo">
+            <a href="../index.html">
+                <img class="logo-icon" src="../images/logo-white.png">
+            </a>
+        </div>
+
+        <div id="hamburger" onclick="toggleNav();">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div id="nav-panel">
+            <div id="nav-content">
+                <div id="nav-logo">
+                    <a href="../index.html">
+                        <img class="logo-icon" src="../images/logo.png">
+                    </a>
+                </div>
+
+                <div id="nav-links">
+                    <a href="../index.html">
+                        <h1>
+                            <span class="slide-text">Home</span>
+                        </h1>
+                    </a>
+                    <a href="./about.html">
+                        <h1>
+                            <span class="slide-text">About</span>
+                        </h1>
+                    </a>
+                    <a href="mailto:hello@geenah.com" target="_top">
+                        <h1>
+                            <span class="slide-text">Contact</span>
+                        </h1>
+                    </a>
+
+                </div>
+                <div id="other-links">
+                    <h2 id="links-heading">Find me on</h2>
+
+                    <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                        <h2> &mdash;
+                            <span class="slide-text">LinkedIn</span>
+                        </h2>
+                    </a>
+                    <a href="https://github.com/mleegina">
+                        <h2> &mdash;
+                            <span class="slide-text">Github</span>
+                        </h2>
+                    </a>
+                    <a href="https://codepen.io/geenah/">
+                        <h2>&mdash;
+                            <span class="slide-text">Codepen</span>
+                        </h2>
+                    </a>
+
+                </div>
+                <hr>
+                <div id="project-x-scroll">
+
+                    <a href="./yvnt.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/yvnt.png">
+                            <h2>YVNT</h2>
+                            <hr>
+
+                            <p>Improving the onboarding process</p>
+                        </div>
+                    </a>
+                    <a href="./landy.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/landy.png">
+                            <h2>Landy</h2>
+                            <hr>
+                            <p>Empowering students to make educated off-campus housing decisions</p>
+                        </div>
+                    </a>
+
+                    <a href="./ferrisacres.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/fa2.png">
+                            <h2>Ferris Acres</h2>
+                            <hr>
+                            <p>The benefits of an online ordering system</p>
+                        </div>
+                    </a>
+
+
+
+                    <a href="">
+                        <div class="project-preview">
+                            <img src="../images/nav/bagel1.png">
+                            <h2>Psychedelicatessen</h2>
+                            <hr>
+                            <p>Designing an inventory management system</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="project-header" class="psych-bg">
+
+
+        <div class="header-intro slide-in-left">
+            <p>
+                <span class="project-title">Psychedelicatessen</span>
+                <span class="fade-content">is a popular bagel shop for locals and students alike. The owner was still using Excel spreadsheets to track
+                    her inventory and was frustrated with manually tracking each of her ingredients. I outlined the requirements
+                    for a POS and inventory tracking system, that would address her concerns.</span>
+
+            </p>
+            <div>
+                <hr>
+            </div>
+
+        </div>
+
+
+        <div class="header-extra slide-in-top">
+            <div class="header-role">
+                <h2>MY ROLE</h2>
+                <p>
+                    System Analysis &amp; Design
+                </p>
+                <br>
+                <h2>PROJECT DURATION</h2>
+                <p>Fall 2017</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="project-content">
+        <div class="container">
+            <div class="row">
+                <h1>THE PROBLEM</h1>
+            </div>
+            <div class="row">
+                <p>
+                    Psychedelicatessen is a breakfast and lunch eatery, serving bagels made from
+                    <b>locally-sourced, organic ingredients</b>. The owner, Laura Kerrone has been using an Excel spreadsheet
+                    to manage and track her costs but because it cannot integrate with her counter,
+                    <b>it does not update in real time.</b> The work must be done done manually, so managing the inventory and
+                    cost of each ingredient is difficult. Psychedelicatessen prides itself on locally-sourced ingredients,
+                    so it is important to Laura that the system be able to track the inventory by portion size and cost.
+                </p>
+                <h3 class="text-spacing">Her vision is a system that can track inventory usage and waste would help project future inventory needs,
+                    therefore reducing cost and waste, streamlining employee workflow, and leading to better service overall.</h3>
+            </div>
+        </div>
+        <img class="timeline" class="row" src="../images/bagel/inside.png">
+
+        <div class="container width-50">
+
+            <div class="row">
+                <h1>SYSTEM CAPABILITIES</h1>
+            </div>
+            <div class="row">
+                <p>
+                    The following capabilities were grouped into three main categories based off of Laura's requirements:
+                    <br>
+                </p>
+                <br>
+                <dl>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Inventory</h2>
+                    </dt>
+                    <dd>Track inventory levels in different units</dd>
+                    <dd>Store menu item, which are items which are sold, and the price
+                        <sup>*</sup> of the items</dd>
+                    <dd>Build recipes for some menu items (ie. sandwich) from stored ingredients with ingredients in different
+                        units. Calculate the cost
+                        <sup>**</sup> for each recipe </dd>
+                    <dd>Track cost per ingredient</dd>
+                    <dd>Convert units of measure between inventory units of measure (counting, buying) and recipe units of measure</dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Sales</h2>
+                    </dt>
+                    <dd>Allow customers to customize recipes, and calculate the cost of the customized recipe</dd>
+                    <dd>Print tickets for order assembly</dd>
+                    <dd>Process payments</dd>
+                    <dd>Allow employees to place and modify orders quickly, and with little training</dd>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Administrative</h2>
+                    </dt>
+                    <dd>Keep track of waste and to help management implement recommend operational improvements</dd>
+                    <dd>Track which employee placed orders, including employee logins</dd>
+                    <dd>Generate reports</dd>
+                    <dd>Maintain permission for users, for instance: Inventory management (admin), placing orders (employee &amp;
+                        admin)
+                    </dd>
+
+                </dl>
+
+                <br>
+                <p class="footnote">
+                    <sup>*</sup> Defined as the cost incurred by the seller/business
+                    <br>
+                    <sup>**</sup> Defined as the price payed by the buyer
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>BUSINESS BENEFITS</h1>
+            </div>
+            <div class="row">
+                <p>If the previous capabilities are met, Psychedelicatessen will experience a number of benefits:</p>
+
+                <br>
+                <ul>
+                    <li>Faster turnaround time at the register</li>
+                    <li>Informed decision making based off the data</li>
+                    <li>Fewer errors with reporting and inventory levels</li>
+                    <li>Employees will no longer have to focus on manually tracking orders—instead they can focus on customer
+                        service
+                    </li>
+                    <li>Accurate data collection will save money and time—no need for manual entry via Excel!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>SYSTEM OVERVIEW</h1>
+            </div>
+            <div class="row">
+                <p>
+                    The system is built up of three subsystems: inventory, sales, and admin/reporting. However, I will focus on the two main
+                    subsystems, inventory and sales.
+                </p>
+                <dl>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Inventory</h2>
+                    </dt>
+                    <dd>
+                        This subsystem is where inventory items and recipes are maintained. Inventory items are accounted for, and cost and waste
+                        reports can be generated.
+                    </dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Sales</h2>
+                    </dt>
+                    <dd>
+                        This subsystem is where the orders are created and fulfilled. Customers can customize their orders, menu items are maintained,
+                        and payments are accepted.
+                    </dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Admin/Reporting</h2>
+                    </dt>
+                    <dd>
+                        This subsystem is dedicated to the admin, and consists of an admin dashboard and reporting tools. Those users with admin
+                        privileges will be able generate inventory and waste reports filtered by date.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>USE CASES</h1>
+            </div>
+            <div class="row">
+                <p>
+                    The use cases are split up by subsystem and summarized in the table below. The full use cases for the inventory subsystem
+                    can be viewed in the next section. I focused in on the inventory subsystem because the problems were
+                    unique to this business, and many of the sales features were similar to a generic POS system.
+                </p>
+                <br>
+                <h2>
+                    <span class="arrow"></span>Inventory Subsystem</h2>
+
+                <div class="table-wrapper">
+                    <table class="usecase-table">
+                        <thead>
+                            <tr>
+                                <th colspan="1">Name</th>
+                                <th colspan="1">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maintain Inventory Item (includes cost, portion size conversion rules, and adding inventory
+                                    items)
+                                </td>
+                                <td>The owner creates/reviews/updates/deletes inventory items, inventory costs, or inventory
+                                    rules.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maintain Recipe</td>
+                                <td>The owner creates/reviews/updates/deletes recipe.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Count Inventory Items</td>
+                                <td>The owner counts inventory and enters it into the system.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Generate Cost Report</td>
+                                <td>The inventory system generates the cost report and sends it to the owner.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Generate Waste Report</td>
+                                <td>The inventory system generates the waste levels with the cost and sends it to the owner.</td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+                <br>
+
+                <h2>
+                    <span class="arrow"></span>Sales Subsystem</h2>
+
+                <div class="table-wrapper">
+                    <table class="usecase-table">
+                        <thead>
+                            <tr>
+                                <th colspan="1">Name</th>
+                                <th colspan="1">Description</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Create Order</td>
+                                <td>The customer selects menu item and employee enters it into the system. System creates and
+                                    records order, then prints the order ticket.</td>
+                            </tr>
+                            <tr>
+                                <td>Fulfill Order</td>
+                                <td>The employee receives the order and makes the order. After the employee fulfills the order,
+                                    the inventory level is reduced accordingly and updated.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Maintain Menu Item</td>
+                                <td>The employee creates a new menu item, edits an existing menu item, or deletes an existing
+                                    menu item.
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td> Accept Payment</td>
+                                <td>The employee takes payment and enters the amount into the system. Employee will also ask
+                                    for customer’s email for promotional purposes.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Generate Sales Report</td>
+                                <td>The manager sets up the sales report to run on a schedule and selects the desired parameters.
+                                    The system generates the sales report according to the requirements.</td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="usecase-slider">
+            <div class="usecase">
+                <img class="usecase" src="../images/bagel/1.png">
+            </div>
+            <div class="usecase">
+                <img class="usecase" src="../images/bagel/2.png">
+            </div>
+            <div class="usecase">
+                <img class="usecase" src="../images/bagel/3.png">
+            </div>
+            <div class="usecase">
+                <img class="usecase" src="../images/bagel/4.png">
+            </div>
+            <div class="usecase">
+                <img class="usecase" src="../images/bagel/5.png">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <h1>DOMAIN MODEL CLASS DIAGRAM</h1>
+            </div>
+            <div class="row">
+                <img class="img-responsive" src="../images/bagel/dmc.png">
+                <p>
+                    The most challenging part was determining how to update the ingredient levels after every order.
+                    <b>Each ingredient bought by Psychedelicatessen was converted into portions with the corresponding cost
+                        per portion.</b> Portions could look like 2 slices of bacon, 1 egg, or an 1/8 cup of spinach. These
+                    portion sizes would be used to create a recipe, and the recipes would become menu items. This way when
+                    a customer would purchase a menu item, the system could keep track of the inventory levels, and the cost
+                    per item. Additionally, the use of portions makes it easy to track customized orders because employees
+                    can add or remove portions with ease.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="splash psych-splash">
+            <h1 class="remove-margin row">WIREFRAMES</h1>
+        </div>
+
+        <div class="usecase-slider splash psych-splash">
+            <div class="wireframe">
+                <img class="wireframe" src="../images/bagel/wireframe/order.png">
+            </div>
+            <div class="wireframe">
+                <img class="wireframe" src="../images/bagel/wireframe/inventory.png">
+            </div>
+            <div class="wireframe">
+                <img class="wireframe" src="../images/bagel/wireframe/recipe1.png">
+            </div>
+            <div class="wireframe">
+                <img class="wireframe" src="../images/bagel/wireframe/recipe2.png">
+            </div>
+            <div class="wireframe">
+                <img class="wireframe" src="../images/bagel/wireframe/menu.png">
+            </div>
+            <div class="wireframe">
+                <img class="wireframe" src="../images/bagel/wireframe/report.png">
+            </div>
+        </div>
+
+        <div class="container row">
+            <h1>REFLECTION</h1>
+            <br>
+            <p>
+                I was unable to get feedback from the owner, but I believe this solution fits her business needs. While I was designing this
+                system,
+                <b>I began to question if an in-house solution was the best fit for Psychedelicatessen.</b>
+                There are already inventory management systems and all-in-one POS systems that exist, like Toast and Revel. Both systems
+                can create recipes, manage inventory, track waste, generate reports, and handle sales. Pre-existing solutions
+                are tried and tested, updated regularly, well supported, and implemented relatively quickly. However it relies
+                heavily on the service, and that dependence could be crippling if the vendor is unreliable, or if they need
+                to transition to another platform.
+                <br>
+                <br>Because transaction data is so sensitive, I think it would best to use a trusted off-the-shelf solution.
+                <b>Without a dedicated IT team, it would be very difficult for Psychedelicatessen to create and maintain a secure,
+                    custom-made system.</b>
+                Many off-the-shelf solutions offer some level of customization to the business that could satisfy the needs of Psychedelicatessen.
+                <br>
+                <br> It is also worth noting that some
+                <b>off-the-shelf solutions have APIs that can be used to analyze sales data</b>. This could be a relatively
+                <b>quick and inexpensive way to gather more insights</b>. It could be a great project for college students who
+                live nearby to implement a dashboard with these insights. For example, a dynamic admin dashboard could be
+                created that aggregates waste and inventory levels into one view or a weather API that could be integrated
+                to determine if there is a correlation between the weather and type of sales. The possibilities are endless,
+                and can be tailored to any future needs that arise.
+                <br>
+                <br>My final recommendation would be to utilize a pre-existing solution with an API so that the owner can have
+                the option of developing customized solutions with relatively low overhead.
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+            <div id="footer-left">
+                    <div class="align-center">
+                        <div class="email">
+        
+                            <h2>LET'S TALK</h2>
+                            <a href="mailto:hello@geenah.com" target="_top">
+                                <h1>
+                                    <span class="slide-text">hello@geenah.com</span>
+                                </h1>
+                            </a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                            <h2> &mdash;
+                                <span class="slide-text">LinkedIn</span>
+                            </h2>
+                        </a>
+                        <a href="https://github.com/mleegina">
+                            <h2> &mdash;
+                                <span class="slide-text">Github</span>
+                            </h2>
+                        </a>
+                        <a href="https://codepen.io/geenah/">
+                            <h2>&mdash;
+                                <span class="slide-text">Codepen</span>
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+
+        <div id="footer-right">
+            <a href="./yvnt.html">
+                <div id="next" class="color-one">
+                    <div class="align-left">
+                        <h2>VIEW NEXT</h2>
+                        <h1>YVNT</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- <script src="../js/slideshow.js"></script> -->
+
+</body>
+
+</html>

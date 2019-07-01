@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Landy</title>
+    <meta name="author" content="Gina Lee">
+    <meta name="description" content="Landy project page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat|Open+Sans:300,400,700" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124170044-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124170044-1');
+</script>
+
+</head>
+
+<body>
+    <div id="sticky-nav">
+        <div id="logo">
+            <a href="../index.html">
+                <img class="logo-icon" src="../images/logo-white.png">
+            </a>
+        </div>
+
+        <div id="hamburger" onclick="toggleNav();">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div id="nav-panel">
+            <div id="nav-content">
+                <div id="nav-logo">
+                    <a href="../index.html">
+                        <img class="logo-icon" src="../images/logo.png">
+                    </a>
+                </div>
+
+                <div id="nav-links">
+                    <a href="../index.html">
+                        <h1>
+                            <span class="slide-text">Home</span>
+                        </h1>
+                    </a>
+                    <a href="./about.html">
+                        <h1>
+                            <span class="slide-text">About</span>
+                        </h1>
+                    </a>
+                    <a href="mailto:hello@geenah.com" target="_top">
+                        <h1>
+                            <span class="slide-text">Contact</span>
+                        </h1>
+                    </a>
+
+                </div>
+                <div id="other-links">
+                    <h2 id="links-heading">Find me on</h2>
+
+                    <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                        <h2> &mdash;
+                            <span class="slide-text">LinkedIn</span>
+                        </h2>
+                    </a>
+                    <a href="https://github.com/mleegina">
+                        <h2> &mdash;
+                            <span class="slide-text">Github</span>
+                        </h2>
+                    </a>
+                    <a href="https://codepen.io/geenah/">
+                        <h2>&mdash;
+                            <span class="slide-text">Codepen</span>
+                        </h2>
+                    </a>
+
+                </div>
+                <hr>
+                <div id="project-x-scroll">
+
+                    <a href="./yvnt.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/yvnt.png">
+                            <h2>YVNT</h2>
+                            <hr>
+
+                            <p>Improving the onboarding process</p>
+                        </div>
+                    </a>
+                    <a href="">
+                            <div class="project-preview">
+                                <img src="../images/nav/landy.png">
+                                <h2>Landy</h2>
+                                <hr>
+                                <p>Empowering students to make educated off-campus housing decisions</p>
+                            </div>
+                        </a>
+
+                    <a href="./ferrisacres.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/fa2.png">
+                            <h2>Ferris Acres</h2>
+                            <hr>
+                            <p>The benefits of an online ordering system</p>
+                        </div>
+                    </a>
+
+
+
+                    <a href="./psychedelicatessen.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/bagel1.png">
+                            <h2>Psychedelicatessen</h2>
+                            <hr>
+                            <p>Designing an inventory management system</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-header" class="landy-background">
+
+        <div class="header-intro slide-in-left">
+            <p>
+                <span class="fade-content">The vast majority of students have never rented an apartment on their own before going to college. Students
+                    are unfamiliar with their rights as tenants, they don't know the reputations of the landlords in the
+                    area.
+                </span>
+                <span class="project-title">Landy</span>
+                <span class="fade-content">aims to increase transparency and help students make informed decisions when moving off-campus.</span>
+
+            </p>
+            <div>
+                <hr>
+            </div>
+
+        </div>
+        <div class="header-extra slide-in-top">
+            <div class="header-role">
+                <h2>MY ROLE</h2>
+                <p>
+                    Personal project
+                </p>
+                <br>
+                <h2>PROJECT DURATION</h2>
+                <p>Ongoing</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="container">
+            <div class="row">
+                <h1>THE PROBLEM</h1>
+            </div>
+            <div class="row">
+                <p>
+                    When I was in school, most of the off-campus housing was owned by individuals rather than property management groups. This
+                    meant
+                    <b>the service that students were receiving was very inconsistent</b>, to the point where a subset of students
+                    refused to live on property that was not managed by our school.
+                    <br>
+                    <br> The issue was three-part:
+                    <br>
+                    <br>
+                    <ul>
+                        <li>
+                            Students were
+                            <b>repurposing social media platforms</b> (Facebook, Reddit, and Twitter) to share their off-campus
+                            experiences
+                        </li>
+                        <li>
+                            Students were
+                            <b>inexperienced renters and did not know their rights as a tenant</b>
+                        </li>
+                        <li>
+                            There was no way to get additional information on landlords
+                        </li>
+
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <img class="timeline" class="row" src="../images/landy/problem.png">
+
+        <div class="container width-50">
+            <div class="row">
+                <h1>OVERVIEW</h1>
+            </div>
+            <div class="row">
+                <p>
+                    Landy will be launched as a mobile application, on both iOS and Android. Many of the features will work best with mobile,
+                    so the
+                    <b>mobile app will be prioritized over a website for desktop</b>. Additionally smart phone usage is at an
+                    all-time high, with
+                    <b>94% of users age 18-29 owning a smart phone</b>.
+                    <h3 class="text-spacing">
+                        My vision is to empower college students to make informed decisions when moving off campus. The last thing students need
+                        to worry about is their living situation, when they should be focusing on their education.
+                    </h3>
+
+                    The application will be
+                    <b>monetized through university partnerships, and analytics provided to landlords
+                    </b>. It is crucial that landlords and universities are not be able to pay to influence or change ratings,
+                    in order to the gain the trust of the students.
+
+                    <b>Landlords will not be able to not be able to purchase advertisements, instead landlords are able to interact
+                        with the students</b>
+                    to build credibility, while promoting themselves at the same time.
+                    <br>
+                    <br> Universities have student living staff, and an off-campus dean that students can go to for assistance.
+                    <b>Universities will be able to get a more accurate sense of the students' off-campus living experiences</b>
+                    and intervene when necessary.
+
+
+
+
+                </p>
+            </div>
+        </div>
+
+        <div class=" splash landy-splash">
+            <div class="row">
+                <h1>COMPETITOR ANALYSIS</h1>
+            </div>
+        </div>
+        <div class="splash landy-splash">
+            <div class="row">
+                <p>
+                    Besides social media, the current solutions that are available to college students are primarily sites that aggregate listings,
+                    like Jump Off Campus and Rent College Pads. Whose Your Landlord is the only site that allows for the
+                    review of landlords, but it is not targeted towards college students.
+                    <b>The features that are bolded are unique to each solution.</b>
+                </p>
+            </div>
+        </div>
+        <div class="splash landy-splash">
+            <div class="table-wrapper">
+                <table class="comparison">
+                    <thead>
+                        <tr>
+                            <th colspan="1"></th>
+                            <th colspan="1">
+                                <img src="../images/landy/comps/wyl.png">
+
+
+                                <a href="https://www.whoseyourlandlord.com/">
+                                    <h2>Whose Your Landlord</h2>
+                                </a>
+
+                            </th>
+                            <th colspan="1">
+                                <img src="../images/landy/comps/rcp.png">
+
+                                <a href="https://www.rentcollegepads.com/">
+                                    <h2>Rent College Pads</h2>
+                                </a>
+                            </th>
+                            <th colspan="1">
+                                <img src="../images/landy/comps/joc.png">
+
+                                <a href="https://www.jumpoffcampus.com/">
+                                    <h2>Jump Off Campus</h2>
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Users:</td>
+                            <td>Landlords, property managers, renters</td>
+                            <td>Students, landlords, Universities</td>
+                            <td>Students, landlords, Universities</td>
+                        </tr>
+                        <tr>
+                            <td>Platform:</td>
+                            <td>Web</td>
+                            <td>Web,
+                                <b>mobile</b>
+                            </td>
+                            <td>Web</td>
+                        </tr>
+                        <tr>
+                            <td>Mission:</td>
+                            <td>"Empowering &amp; Informing The Rental Community."</td>
+                            <td>Solving off-campus housing for institutions and students.</td>
+                            <td>"Help students find reliable, affordable, off-campus housing."</td>
+                        </tr>
+                        <tr>
+                            <td>Features:</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Provide community insights, neighborhood engagement</b>
+                                    </li>
+                                    <li>Provide analytics to landlords</li>
+                                    <li>Tools for landlords to post and get their listings booked</li>
+                                    <li>
+                                        <b>Renters can share endorsements </b>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Interview landlords &amp; verify listings</li>
+                                    <li>Offer tracking and analytics</li>
+                                    <li>Landlords can buy ads</li>
+                                    <li>Roommate finder</li>
+                                    <li>Students can advertise sublets</li>
+                                    <li>
+                                        <b>Dedicated team to help with scheduling apartment tours</b>
+                                    </li>
+                                    <li>University partnerships</li>
+                                    <li>
+                                        <b>Customized university branded web portal</b>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Interview landlords &amp; verify listings</li>
+                                    <li>University partnerships</li>
+                                    <li>Roommate finder</li>
+                                    <li>Students can advertise sublets</li>
+                                    <li>
+                                        <b>Learning center</b>
+                                    </li>
+                                    <li>Provide insights to administration</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="container">
+
+            <div class="row">
+                <h1>THE USERS</h1>
+            </div>
+            <div class="row">
+                The users can be broken down into three segments: students, landlords, and universities. I will focus on the student user
+                because this app will need an active community of students before landlords or universities will want to
+                partner.
+                <br>
+                <br>
+                <b>Students will be the primary users and will include both undergraduate and prospective students</b> who have
+                a strong preference for mobile-first. Prospective students will be researching universities, and will be
+                interested in looking into off-campus housing. Graduate students will have more experience with renting apartments,
+                but might be more cautious about who they rent from especially if they have a family.
+                <br>
+                <br>
+                <b>Landlords will be an integral part of the community, and will include individual owners and property management
+                    groups.
+                </b> They want to get feedback from the students and grow their overall reputation.
+                <br>
+                <br> Universities are the final type of user, and they want to
+                <b>ensure that their students are safe</b> and comfortable during their studies.
+
+            </div>
+
+        </div>
+
+        <div id="persona-container">
+            <img class="img-responsive" src="../images/landy/personas/persona.png">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>REQUIREMENTS</h1>
+            </div>
+            <div class="row">
+                <p>
+                    Below the requirements are
+                    <b>sorted by MoSCoW method prioritization</b>: must have, should have, could have, won't have
+                </p>
+            </div>
+        </div>
+
+        <div id="moscow" class="table-wrapper">
+            <table class="header-fixed">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>User Story</th>
+                        <th>Importance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Showing checklist</td>
+                        <td>
+                            <b>User (student):</b>
+                            I am just starting to view apartments, and am not sure what I should be looking for. It would be great if I had
+                            <b>access to guide that would walk me through some questions I should ask and things to consider</b>.
+                            I would love to be able to
+                            <b>take and save notes</b> for each place I visited.</td>
+                        <td>Must have</td>
+                    </tr>
+                    <tr>
+                        <td>Pre-rental Checklist</td>
+                        <td>
+                            <b>User (student):</b>
+                            I have narrowed down my decision and am prepared to sign a lease. Before signing the lease, I want to be able to see
+                            <b>a list of things to look for during inspection, and questions to ask about the lease</b>. It
+                            would be helpful if I could check off each of these things while I check them.
+                        </td>
+                        <td>Must have</td>
+                    </tr>
+                    <tr>
+                        <td>Save photos and conversations</td>
+                        <td>
+                            <b>User (student):</b> It would be great if I could
+                            <b>take pictures within the app</b> and store those photos. This way the
+                            <b>pictures I take when checking for existing damage will be in one spot</b>. It would be great
+                            if it stored the pictures with a
+                            <b>time stamp</b>. I would also store screen shots of conversations with my landlords for future
+                            reference.
+                        </td>
+                        <td>Must have</td>
+                    </tr>
+                    <tr>
+                        <td>Leave reviews for landlord </td>
+                        <td>
+                            <b>User (student):</b> I want to be able to leave a review for my landlord. When reading reviews
+                            I want to make sure that they are credible, it is important to me that
+                            <b>each review is reviewed and verified</b>.
+                        </td>
+                        <td>Must have</td>
+                    </tr>
+                    <tr>
+                        <td>Student registers account</td>
+                        <td>
+                            <b>User (student):</b>
+                            I want to register an account to participate in the community.
+                            <br>
+                            <br> For security purposes the user must have
+                            <b>verified .edu email</b>. In order to leave a review the user must provide
+                            <b>proof of residency</b> (ie. lease)
+                        </td>
+                        <td>Must have</td>
+                    </tr>
+                    <tr>
+                        <td>Landlord registers account</td>
+                        <td>
+                            <b>User (landlord):</b>
+                            I want to register an account to participate in the community.
+                            <br>
+                            <br> For security and accuracy, users must provide
+                            <b>proof of identity</b>.
+                        </td>
+                        <td>Must have</td>
+                    </tr>
+                    <tr>
+                        <td>Educational articles</td>
+                        <td>
+                            <b>User (student):</b>
+                            I want to learn more about living on my own.
+                            <br>
+                            <br>Things like: How/where to store your things over summer, what you need to know about winter heating,
+                            how to get your security deposit back etc.
+                        </td>
+                        <td>Should have</td>
+                    </tr>
+                    <tr>
+                        <td>Forum</td>
+                        <td>
+                            <b>User (student):</b>
+                            I have an off-campus question that I would like input on. I would also like to write a guide for other students on things
+                            to do in the area, and upcoming events.
+
+                            <br>
+                            <br>
+                            <b>User (landlord):</b>
+                            I want to engage with the students and help to answer their questions, and build credibility.
+
+                            <br>
+                            <br>
+                            <b>User (University):</b> I want to be able to see what they are saying about life off-campus, and
+                            help answer their questions.
+                        </td>
+                        <td>Could have</td>
+                    </tr>
+                    <tr>
+                        <td>Chat function</td>
+                        <td>
+                            <b>User (student):</b>
+                            I want to be able to get in touch with a landlord. I would prefer to communicate via text within the application then having
+                            to switch back and forth between my native messaging app.
+                        </td>
+                        <td>Could have</td>
+                    </tr>
+                    <tr>
+                        <td>Guest articles</td>
+                        <td>
+                            <b>User (landlord):</b>
+                            I want to be able to give advice to students who don’t know much about renting in the area.
+                            <br>
+                            <br> Landlords with a 4 rating or higher can submit guest articles to increase credibility. These
+                            are reviewed before publishing.
+                        </td>
+                        <td>Won’t have</td>
+                    </tr>
+                    <tr>
+                        <td>Find roommates</td>
+                        <td>
+                            <b>User (student):</b>
+                            I need to find a roommate, but I would like it if we had similar preferences. It would be cool the app used survey results
+                            to connect me with other compatible students.</td>
+                        <td>Won’t have</td>
+                    </tr>
+                    <tr>
+                        <td>Post room for sublet or summer rent</td>
+                        <td>
+                            <b>User (student):</b>
+                            I am looking for someone to sublet and want to be able to advertise my apartment to other students.</td>
+                        <td>Won’t have</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <h1>WIREFRAMES</h1>
+            </div>
+            <div class="row">
+                    <p>
+                            The key path scenarios for the "must have" requirements are displayed below. They include:
+                            <b>viewing landlord reviews, viewing the showing checklist, and viewing the pre-lease checklist</b>.
+                        </p>
+            </div>
+
+
+        </div>
+        <div class="bg">
+            <div id="landy-img-container">
+                <img class="img-responsive" src="../images/landy/wireframe/overview.png">
+
+            </div>
+
+        </div>
+
+
+        <div class="usecase-slider splash landy-splash">
+            <div class="wireframe l-m">
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/home.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/alllandlords.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/landylisa.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/showing.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/showing1.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/prelease.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/notes.png">
+            </div>
+            <div class="wireframe l-m">
+
+                <img class="wireframe l-m-w" src="../images/landy/wireframe/albums.png">
+            </div>
+        </div>
+
+        <div class="container row">
+            <h1>NEXT STEPS</h1>
+            <br>
+            <p>
+                The next major steps would be development, monetization strategy, and launch plan. I would love to assemble a team of students
+                or recent graduates who might be passionate about this issue. I am looking into developing it in
+                <b>react native</b>, to get a MVP out to test with students. I want to launch in schools that are in
+                <b>rural college towns</b>, where the majority of students are
+                <b>out-of-state residents</b>. It is important that the school has mostly out-of-state students because it is
+                a sure sign that they will have to find off-campus housing when attending university.
+                <br>
+                <br> Rural areas have fewer properties owned by property management groups and more that are maintained by individuals.
+                It is more difficult to get information on individual owners, and their service can be more inconsistent
+                because they do not have company policies to abide by. To keep advertising costs down to a minimum, this
+                application will be advertised on
+                <b>college specific Facebook groups and sub-Reddit pages</b>, where students currently go to post their experiences.
+                If a large student base uses this app, it would not be difficult to get landlords and universities using
+                it as well. This is an ongoing personal project, and I hope to turn this into a reality someday very soon.
+            </p>
+        </div>
+
+    </div>
+    </div>
+
+
+    <footer>
+        <div id="footer-left">
+            <div class="align-center">
+                <div class="email">
+
+                    <h2>LET'S TALK</h2>
+                    <a href="mailto:hello@geenah.com" target="_top">
+                        <h1>
+                            <span class="slide-text ">hello@geenah.com</span>
+                        </h1>
+                    </a>
+                </div>
+                <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                    <h2> &mdash;
+                        <span class="slide-text ">LinkedIn</span>
+                    </h2>
+                </a>
+                <a href="https://github.com/mleegina">
+                    <h2> &mdash;
+                        <span class="slide-text ">Github</span>
+                    </h2>
+                </a>
+                <a href="https://codepen.io/geenah/">
+                    <h2>&mdash;
+                        <span class="slide-text ">Codepen</span>
+                    </h2>
+                </a>
+            </div>
+        </div>
+
+        <div id="footer-right">
+            <a href="./ferrisacres.html">
+                <div id="next" class="color-three">
+                    <div class="align-left">
+                        <h2>VIEW NEXT</h2>
+                        <h1>Ferris Acres</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- <script src="../js/slideshow.js"></script> -->
+
+
+
+
+</body>
+
+</html>

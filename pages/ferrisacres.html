@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8">
+    <title>Ferris Acres</title>
+    <meta name="author" content="Gina Lee">
+    <meta name="description" content="Ferris Acres project page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat|Open+Sans:300,400,700" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124170044-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124170044-1');
+</script>
+
+
+
+</head>
+
+<body>
+    <div id="sticky-nav">
+        <div id="logo">
+            <a href="../index.html">
+                <img class="logo-icon" src="../images/logo-white.png">
+            </a>
+        </div>
+
+        <div id="hamburger" onclick="toggleNav();">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div id="nav-panel">
+            <div id="nav-content">
+                <div id="nav-logo">
+                        <a href="../index.html">
+                            <img class="logo-icon" src="../images/logo.png">
+                        </a>
+                </div>
+
+                <div id="nav-links">
+                    <a href="../index.html">
+                        <h1>
+                            <span class="slide-text">Home</span>
+                        </h1>
+                    </a>
+                    <a href="./about.html">
+                        <h1>
+                            <span class="slide-text">About</span>
+                        </h1>
+                    </a>
+                    <a href="mailto:hello@geenah.com" target="_top">
+                        <h1>
+                            <span class="slide-text">Contact</span>
+                        </h1>
+                    </a>
+
+                </div>
+                <div id="other-links">
+                    <h2 id="links-heading">Find me on</h2>
+
+                    <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                        <h2> &mdash;
+                            <span class="slide-text">LinkedIn</span>
+                        </h2>
+                    </a>
+                    <a href="https://github.com/mleegina">
+                        <h2> &mdash;
+                            <span class="slide-text">Github</span>
+                        </h2>
+                    </a>
+                    <a href="https://codepen.io/geenah/">
+                        <h2>&mdash;
+                            <span class="slide-text">Codepen</span>
+                        </h2>
+                    </a>
+
+                </div>
+                <hr>
+                <div id="project-x-scroll">
+
+                    <a href="./yvnt.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/yvnt.png">
+                            <h2>YVNT</h2>
+                            <hr>
+
+                            <p>Improving the onboarding process</p>
+                        </div>
+                    </a>
+                    <a href="./landy.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/landy.png">
+                            <h2>Landy</h2>
+                            <hr>
+                            <p>Empowering students to make educated off-campus housing decisions</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="project-preview">
+                            <img src="../images/nav/fa2.png">
+                            <h2>Ferris Acres</h2>
+                            <hr>
+                            <p>The benefits of an online ordering system</p>
+                        </div>
+                    </a>
+
+
+
+                    <a href="./psychedelicatessen.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/bagel1.png">
+                            <h2>Psychedelicatessen</h2>
+                            <hr>
+                            <p>Designing an inventory management system</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-header" class="ferris-bg">
+
+            <div class="header-intro slide-in-left">
+                    <p>
+                            <span class="project-title">Ferris Acres Creamery</span> <span class="fade-content">has become very successful in recent years. In an effort to combat their growing pains, 
+                            my team and I developed an online ordering
+                            system for ice cream cakes and pints in order to address their demand and achieve maximum efficiency.</span>
+        
+                        </p>
+                    <div><hr></div>
+                   
+                </div>
+                <div class="header-extra slide-in-top">
+                    <div class="header-role">
+                        <h2>MY ROLE</h2>
+                        <p>
+                        Project Manager, Financial Manager, &amp; UI/UX developer
+
+                        </p>
+                        <br>
+                        <h2>PROJECT DURATION</h2>
+                        <p>Fall 2016</p>
+                        <br>
+                        <a href="http://creamery.herokuapp.com">
+                            <h2>DEMO</h2>
+                        </a>
+                    </div>
+                </div>
+
+    </div>
+
+
+
+    <div class="project-content">
+        <div class="container">
+            <div class="row">
+                <h1>THE PROBLEM</h1>
+            </div>
+            <div class="row">
+                <p>
+
+                    During operations,
+                    <b>one staff member is dedicated to taking orders by phone.</b> While this system works for prepacked pints
+                    and quarts, it has not scaled well for cake orders.
+                    <b>Each order takes at least 15 minutes</b> as the employee guides the customer through a myriad of options.
+                    Cakes themselves take an
+                    <b>additional 40 minutes</b> of preparation time.
+
+                    <h3 class="text-spacing">
+                        In a business already struggling to keep up with demand, a night laden with cake orders can slow operations significantly,
+                        resulting in a significant loss of efficiency and a potential loss of sales.
+                    </h3>
+
+                    Our proposed solution aims to assist Ferris Acres Creamery with their cake and large ice cream orders. The application is
+                    designed to automate the process of gathering customer orders.
+                    <b>By capturing orders online, it helps decrease the time and resources spent in collecting this information
+                        via the phone and in-person.
+                    </b> This in turn will allow Ferris Acres Creamery to collect data from more customers more efficiently.
+                    Furthermore, by taking the order process online, it provides Ferris Acres Creamery with a consolidated
+                    view of the order information along with the means to filter through it.
+
+                </p>
+            </div>
+
+        </div>
+        <img class="timeline" class="row" src="../images/ferrisacres/fa.png">
+        <div class="container width-50">
+            <div class="row">
+                <h1>THE CLIENT</h1>
+
+            </div>
+            <div class="row">
+                <p>
+
+                    <a href="http://www.ferrisacrescreamery.com/">Ferris Acres Creamery</a> is small, family owned ice cream shop located in Southwest Connecticut. The
+                    shop itself is unique because it is located within the farm.
+                    <b>Visitors are treated to an authentic dairy farm experience</b>, complete with daily cow crossings, a
+                    chance to interact with the animals, as well as fresh ice cream created from milk on the farm.
+                    <b>Since its opening, the ice cream shop has been a massive success
+                    </b>, requiring resources to be pulled from the primary farming business to support it. Numerous local
+                    businesses sell the ice cream, and demand continues to grow.
+
+                    <h3 class="text-spacing larger">Voted Best Ice Cream in Connecticut by Buzzfeed in 2016</h3>
+
+
+                    The Ferris family manages the farm as a collective body, with Terry Ferris managing the whole operation. She manages around
+                    <b>100 part-time employees</b> when they are open for the summer season which spans from April through October.
+                    Her employees are usually high school students, or college students who are home for the summer, so
+                    <b>staff turnover is high</b>. Mrs. Ferris was our primary point of contact for the duration of the project.
+
+                </p>
+            </div>
+            <img id="f-a-client-img" class="img-responsive" src="../images/ferrisacres/busy.png">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>REQUIREMENTS</h1>
+            </div>
+
+            <div class="row">
+                <p>
+                    Our initial on site meeting with Mrs. Ferris established the project goals and expectations. It also provided us with a detailed
+                    view of the necessary requirements which we used to define the project scope.
+                </p>
+                <br>
+                <h2>FUNCTIONAL</h2>
+
+                <dl>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Process</h2>
+                    </dt>
+                    <dd>Allow customers to fill out cake order forms on their website</dd>
+                    <dd>Store this information in a relational backend</dd>
+                    <dd>Notify the cake builder of the new orders that come in</dd>
+                    <dd>Allow the employees to update the seasonal flavors</dd>
+                    <dd>Summarize order information so that informed decisions can be made</dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span> People</h2>
+                    </dt>
+
+                    <dd>Employees need to be notified of orders or change in orders</dd>
+                    <dd>Employees need to know where orders are stored and can be viewed</dd>
+                    <dd>Employees need to be trained on how the application functions</dd>
+                    <dd>Customers need to know how to submit a cake order form</dd>
+                    <dd>Managers need to know how to view and close cake orders</dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span> GUI</h2>
+                    </dt>
+
+                    <dd>The user interface of this system had to look modern and fit with the theme of the creamery
+                    </dd>
+                    <dd>The customers should be able to find where and how to place their order with little to no instruction</dd>
+                    <dd>The cake queue needs to have a simple interface for the floor manager to be able to take and sign off
+                        cake orders</dd>
+                    <dd>The application must be usable on mobile because of their proliferation and the computers available to
+                        Ferris Acres Creamery employees while working
+                    </dd>
+                    <dd>
+                        The client facing dashboard will display a summary of the orders placed throughout each month in a bar graph format, with
+                        each individual order listed below
+
+                    </dd>
+                    <dd>
+                        The orders can be sorted by their completion status: order placed, in progress, and complete, as well as by the date they
+                        were placed
+
+                    </dd>
+                </dl>
+            </div>
+            
+            
+
+            <div class="row">
+                    <h2>NON-FUNCTIONAL</h2>
+                <dl>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Software</h2>
+                    </dt>
+                    <dd>
+                        The application is hosted online and serves as a web-page for the employees of the creamery and its potential customers.
+                    </dd>
+                    <dd>
+                        The creamery is connected to AT&amp;T as their ISP so that they have network access on their devices to receive notifications
+                        of new cake orders
+
+                    </dd>
+                    <dd>
+                        A database connection will be required for the application
+
+                    </dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Scalability</h2>
+                    </dt>
+                    <dd>
+                        Staff and future developers have to be able to address any scalability concerns without having to rewrite the application.
+                        The Creamery does not anticipate growth on an order of magnitude capable of impacting the application
+                        performance in the foreseeable future.
+                    </dd>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Security</h2>
+                    </dt>
+                    <dd>
+                        The threats against the system include insecure transactions and reading or modifying sensitive data. Square and the ISP
+                        both have multiple security measures to handle these threats. No transaction data will be saved in
+                        the application database.
+                    </dd>
+                    <dd>
+                        User information must be collected when placing an order. We value user privacy and will put procedures in place to ensure
+                        only the bare minimum of information is held, and after three months it is removed in accordance
+                        with The Creamery's policy.
+                    </dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Usage</h2>
+                    </dt>
+                    <dd>
+                        The project will require a small amount of onsite training so that employees are well versed in usage. We will provide materials
+                        to facilitate this, and if necessary go on site.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>TIMELINE</h1>
+            
+
+            <img class="img-responsive" src="../images/ferrisacres/gantt.png"> The 17-week project period was divided into several sprints. We defined the deliverables for each sprint, and
+            <b>held weekly meetings with the client</b> where we discussed our progress. This approach provided the team with
+            feedback and advice on the design and development completed after each sprint. Rapid prototyping was also used
+            with deliverables, and we assigned deliverables to members with the most relevant experience.
+
+            <img class="img-responsive" src="../images/ferrisacres/plan.png">
+
+            <img class="img-responsive" src="../images/ferrisacres/actualplan.png">
+            <h3 class="text-spacing larger">As per Murphy's law: anything that can go wrong, will go wrong.</h3>
+            In early October one of our team members resigned from the project. His role was to be our main UI/UX designer as well a
+            front-end developer, and so upon his departure I had to reassign tasks. The remaining members were already heavily
+            involved in the system architecture and development, so I volunteered to assume his role. We had just started
+            the design phase, so it was not difficult to transition into his role. At this time
+            <b>we made the decision to use Bootstrap to simplify the development process</b>.
+            <br>
+            <br>The development of the prototype was progressing smoothly, until our lead full-stack developer had to take 3
+            weeks off due to unforseen circumstances. His absence was strongly felt during this time, especially because
+            he was unavailable for the first week. Instead of continuing development at this time, I decided it would be
+            best for us to
+            <b>QA and debug</b> our existing prototype. During the second and third week, our lead developer was available to
+            work remotely and answer questions. Thankfully, my team stayed responsive despite our busy schedules, and we
+            were able to work closely via Facebook Messenger.
+        </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>IS/IT Design</h1>
+            </div>
+            <p class="row">
+                <b>The final product consists of two interfaces – a customer facing interface and a client facing interface.</b>
+                We decided to build a service-oriented platform on Node JS, which allowed the customer and administrative
+                interface to be built as an
+                <b>online, responsive order form across multiple devices</b>. The customer facing interface has a clean responsive
+                design and is optimized to be used on touch based devices. The client interface places more emphasis on functionality
+                rather than design as it will be used by employees internally. The key aspect of this interface is
+                <b>the database that stores all of the cake and ice cream orders</b>.
+            </p>
+        </div>
+
+
+        <div class=" splash fa-splash">
+                <div class="row">
+                        <h1>WIREFRAMES</h1>
+                    </div>
+            </div>
+
+        <div class="usecase-slider splash fa-splash">
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/home.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe " src="../images/ferrisacres/wireframe/cake.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/icecream.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/cart.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/lookup.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/employee.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/employeedetail.png">
+            </div>
+            <div class="wireframe f-a">
+                <img class="wireframe" src="../images/ferrisacres/wireframe/admin.png">
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>COST-BENEFIT ANALYSIS</h1>
+            </div>
+            <div class="row">
+                <p>
+                    I conducted a cost-benefit analysis (CBA)
+                    <b>to assess the feasibility of the project and to measure the increased efficiency and lowered operational
+                        costs</b>. In actuality, we did not receive any payment and this was simply a tool to quantify the
+                    projected benefits and to see how practical it would be to implement.
+                    <br>
+
+                    <br>By using a risk-adjusted model, I estimated the
+                    <b>internal rate of return (IRR) to be 400% over a five year period</b>. The total cost to be incurred over
+                    the same period was estimated to be $22,000, but with an increase in revenue of nearly $200,000. Furthermore,
+                    the team also estimated that Ferris Acres would
+                    <b>save at least 1000 man hours</b> in their efforts in collecting cake orders.
+                    <br>
+                    <img class="img-responsive" src="../images/ferrisacres/cba.png">
+
+                    <br>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Costs</h2>
+                    </dt>
+                    <dd>
+                        The largest non-development related cost incurred was the team and client meetings. With an hourly rate at $26/hour for the
+                        client and $20/hour for the team members, the total came to $2232 for a total of $108 hours.
+                    </dd>
+                    <dd>
+                        During development in year 0 the total costs came to $11,672, and every subsequent year the cost to maintain the system was
+                        estimated to be $2,640 for employee training and maintenance.
+                    </dd>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Benefits</h2>
+                    </dt>
+                    <dd>
+                        A benefit was the elimination of a need for a dedicated staff member to answer the phone. This position required 20 hours
+                        per week for half the year, at a rate of $15/hour. This comes to a total of $31,200 over the course
+                        of 5 years.
+                    </dd>
+                    <dd>
+                        The increase in productivity was the largest benefit coming in at $124,800 in increased sales over the course of 5 years.
+                        We projected that with the online ordering system, employees would be able to focus on order fulfillment
+                        and estimated 20 cones per hour, with each cone averaging $3.
+                    </dd>
+                    <dd>Additional benefits include the system keeping track of the flavors that are being bought, which will
+                        save time determining the flavors to purchase more frequently. The analytics will also help the manager
+                        optimize shift schedules.
+                    </dd>
+                    <dd>
+                        Finally, customers will be more satisfied with the convenience of placing an order online, and picking it up without waiting
+                        in line. We predict the increased speed will lead to more satisfied customers and repeat business.
+                        We project 1,000 customers valued at $10 each, for a total of $10,000 during the 5 year time frame.
+                    </dd>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>RESULTS &amp; FEEDBACK</h1>
+            </div>
+            <div class="row">
+                <p>
+                Our project resulted in an online ordering form that customers can use to purchase ice cream cakes as well as pints, and
+                a client-facing dashboard displaying all the orders. We made all of our major deadlines and accomplished
+                our outlined requirements, despite losing a teammate. We kept the interface simple and clean, for ease-of-use
+                for both the client and her customers. It was important that her
+                <b>older clients who might not have as much technical experience would be able to use the form</b>. The client-facing
+                interface was also kept simple to keep it intuitive, so it would be
+                <b>easy to train a new employee on the system since Ferris Acres has high staff turnover</b>.
+                <br>
+                <br> Mrs. Ferris was satisfied with the deliverables, although
+                <b>she noted a couple of outstanding issues</b>, including incorporating all of the data onto our solution.
+                Mrs. Ferris does not think that the application is ready to go live, as there is currently
+                <b>no way to handle payments</b>. She would like to integrate Square with the online ordering system because
+                her pick up window is not equipped to process sales. It is also
+                <b>important that the orders placed online have been pre-paid</b>, to reassure Mrs. Ferris will be compensated
+                for her products.
+            </p>
+            </div>
+
+        </div>
+
+        <div class="farm-img-wrapper">
+            <img class="img-responsive" src="../images/ferrisacres/farm.png">
+
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <h1>REFLECTION</h1>
+
+            
+            <p>
+                An online ordering system would be extremely beneficial to the Creamery, as shown through the CBA. Despite all of the challenges,
+                I was proud of what we had accomplished. Unfortunately we were
+                <b>unable to test a MVP with real customers</b>, but we had created the framework and showed Mrs. Ferris the
+                benefit this would have on her business.
+
+                <h3 class="text-spacing">A production level project would require using different tools and different considerations.</h3> At the
+                time of the project, the team members did not have enough experience to approach the problem in a way that
+                could securely handle payments and be production ready.
+                <br>
+                <br>
+                <b>In retrospect, the team benefitted from the sudden departure of a member during the development phase.</b>
+                This allowed us to regroup and
+                <b>begin testing earlier</b> than we scheduled. By debugging in smaller chunks, I am confident that it led us
+                to fewer issues down the road. We were able to easily fix minor bugs before they became giant, complicated
+                bugs.
+                <br>
+                <br> The CBA also seems to be inflated, even after changing some numbers to be more realistic at Mrs. Ferris'
+                suggestion. It would be great if we could have
+                <b>compared the actual numbers from a production ready system to see how accurate our projections were</b>.
+                Regardless, it was interesting to calculate the benefits, and I was surprised at how quickly that number
+                added up. I am so thankful to Mrs. Ferris for providing us with this opportunity, making time to give us
+                feedback, and letting us sample her ice cream! I learned so much during this time, and couldn't have asked
+                for a better team and client.
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+            <div id="footer-left">
+                    <div class="align-center">
+                        <div class="email">
+        
+                            <h2>LET'S TALK</h2>
+                            <a href="mailto:hello@geenah.com" target="_top">
+                                <h1>
+                                    <span class="slide-text">hello@geenah.com</span>
+                                </h1>
+                            </a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                            <h2> &mdash;
+                                <span class="slide-text">LinkedIn</span>
+                            </h2>
+                        </a>
+                        <a href="https://github.com/mleegina">
+                            <h2> &mdash;
+                                <span class="slide-text">Github</span>
+                            </h2>
+                        </a>
+                        <a href="https://codepen.io/geenah/">
+                            <h2>&mdash;
+                                <span class="slide-text">Codepen</span>
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+
+        <div id="footer-right">
+            <a href="./psychedelicatessen.html">
+                <div id="next" class="color-four">
+                    <div class="align-left">
+                        <h2>VIEW NEXT</h2>
+                        <h1>Psychedeli-
+                            <br>catessen</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- <script src="../js/slideshow.js"></script> -->
+
+</body>
+
+</html>

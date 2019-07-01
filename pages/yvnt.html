@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>YVNT</title>
+    <meta name="author" content="Gina Lee">
+    <meta name="description" content="YVNT project page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat|Open+Sans:300,400,700,700i" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124170044-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124170044-1');
+</script>
+
+
+
+</head>
+
+<body>
+    <div id="sticky-nav">
+        <div id="logo">
+            <a href="../index.html">
+                <img class="logo-icon" src="../images/logo-white.png">
+            </a>
+        </div>
+
+        <div id="hamburger" onclick="toggleNav();">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div id="nav-panel">
+            <div id="nav-content">
+                <div id="nav-logo">
+                    <a href="../index.html">
+                        <img class="logo-icon" src="../images/logo.png">
+                    </a>
+                </div>
+
+                <div id="nav-links">
+                    <a href="../index.html">
+                        <h1>
+                            <span class="slide-text">Home</span>
+                        </h1>
+                    </a>
+                    <a href="./about.html">
+                        <h1>
+                            <span class="slide-text">About</span>
+                        </h1>
+                    </a>
+                    <a href="mailto:hello@geenah.com" target="_top">
+                        <h1>
+                            <span class="slide-text">Contact</span>
+                        </h1>
+                    </a>
+
+                </div>
+                <div id="other-links">
+                    <h2 id="links-heading">Find me on</h2>
+
+                    <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                        <h2> &mdash;
+                            <span class="slide-text">LinkedIn</span>
+                        </h2>
+                    </a>
+                    <a href="https://github.com/mleegina">
+                        <h2> &mdash;
+                            <span class="slide-text">Github</span>
+                        </h2>
+                    </a>
+                    <a href="https://codepen.io/geenah/">
+                        <h2>&mdash;
+                            <span class="slide-text">Codepen</span>
+                        </h2>
+                    </a>
+
+                </div>
+                <hr>
+                <div id="project-x-scroll">
+
+                    <a href="">
+                        <div class="project-preview">
+                            <img src="../images/nav/yvnt.png">
+                            <h2>YVNT</h2>
+                            <hr>
+
+                            <p>Improving the onboarding process</p>
+                        </div>
+                    </a>
+
+            
+
+                    <a href="./landy.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/landy.png">
+                            <h2>Landy</h2>
+                            <hr>
+                            <p>Empowering students to make educated off-campus housing decisions</p>
+                        </div>
+                    </a>
+                    <a href="./ferrisacres.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/fa2.png">
+                            <h2>Ferris Acres</h2>
+                            <hr>
+                            <p>The benefits of an online ordering system</p>
+                        </div>
+                    </a>
+
+                    <a href="./psychedelicatessen.html">
+                        <div class="project-preview">
+                            <img src="../images/nav/bagel1.png">
+                            <h2>Psychedelicatessen</h2>
+                            <hr>
+                            <p>Designing an inventory management system</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="project-header" class="yvnt-bg">
+        <div class="header-intro slide-in-left">
+            <p>
+                <span class="fade-content">I co-founded</span>
+                <span class="project-title">YVNT</span><span class="fade-content">, a B2B corporate experience marketplace powered by experts and creatives. While new vendors were initially
+                    excited by our platform, 40% dropped out during the onboarding phase. I implemented a solution that resulted
+                    in a 90% completion rate.</span>
+                <!-- The process was inefficient and lacked the flexibility our vendors needed. -->
+                <!-- The solution that was implemented resulted in a 90% completion rate. -->
+            </p>
+            <div><hr></div>
+           
+        </div>
+        <div class="header-extra slide-in-top">
+            <div class="header-role">
+                <h2>MY ROLE</h2>
+                <p>
+                    To procure, evaluate, and onboard vendors
+                </p>
+                <br>
+                <h2>PROJECT DURATION</h2>
+                <p>Jan - Feb 2018</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-content">
+
+        <div class="container">
+            <div class="row">
+                <h1>THE PROBLEM</h1>
+            </div>
+            <div class="row">
+                <p>
+                    Corporate clients and workplace teams could browse our platform to find unique experiences that fulfilled their specific
+                    needs, like team bonding, recruitment, celebration, and client entertainment. The vendors on our platform
+                    hosted a variety of non-traditional experiences, like an adult summer camp hosted by a stand-up comedian,
+                    to a team photo shoot with a photographer.
+                    <b>I needed to curate a diverse set of experiences that fulfilled varying corporate purposes, while screening
+                        for quality.</b>
+                    <br>
+
+                    <br> The onboarding process started after an initial discovery call and interview. If the vendor seemed to
+                    be a good fit,
+                    <b>they filled out Typeforms: one detailed their
+                        <a class="embed-link" href="https://bryandieudonne.typeform.com/to/s4VbWn">personal profile</a>
+                        and the other outlined their event.</b> After the forms were completed, I reviewed the event and
+                    noted my feedback. Another call would be scheduled with the vendor to go over the necessary changes.
+                    <br>
+
+                    <h3 class="text-spacing">The feedback loop was the longest and most problematic step. On average the entire process took 2 weeks,
+                        but that was dependent on the number of revisions. </h3>
+
+
+                    Vendors were frustrated with how long the onboarding process took, and gave up halfway through. In addition, I was heavily
+                    involved throughout the entire process and spent most of my time communicating with vendors over the
+                    phone and through email.
+                    <b>My goal was to create a new process that would decrease onboarding time and have fewer vendors back out.</b>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+
+        </div>
+
+        <div class="timeline-container">
+            <img class="timeline" class="row" src="../images/yvnt/timeline.png">
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>THE USERS</h1>
+            </div>
+
+            <div class="row">
+                <p>
+                    The users involved in the onboarding process consisted of the vendors who were hosting the event, their assistants, or other
+                    office staff.
+                    <b>The majority of our users were 25 - 40 years old, entrepreneurs or small-business owners, who were proficient
+                        with technology.</b>
+                    <br>
+                    <br> Due to the differing needs of our users, most had to supplement their experience with extra information
+                    regarding pricing and supplies.
+                    <b>The type of information that each vendor required from their client was different.</b>
+                    For example, the price of an tour is dependent on the number of people because the guide will need to arrange an appropriately
+                    sized vehicle for transportation. On the other hand, a cook must be aware of any allergies or dietary
+                    restrictions. A photographer might want to collect information on the guests, to bring appropriately
+                    sized clothes and props.
+                    <b>The forms needed to be open-ended to accommodate for all types of vendors.</b>
+                    <br>
+                    <br> Some vendors had their supporting staff fill out the forms. This caused some issues as I had not gotten
+                    a chance to introduce them to our platform. These kinds of users asked very similar questions, inquiring
+                    about sample responses, photos, or next steps.
+                    <b>Because some vendors brought additional staff into the process, we needed a solution that would allow
+                        us to communicate effectively with the entire group, and clearly outline the goals expectations for
+                        those users who were unfamiliar with our platform.</b>
+
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <img class="timeline" class="row" src="../images/yvnt/mavens.png">
+
+        <div class="container width-50">
+            <div class="row">
+                <h1>REQUIREMENTS</h1>
+            </div>
+
+            <div class="row">
+                <p>
+                    In order to support the many different types of vendors, I came up with the following requirements and grouped them into
+                    the three parts that ended up becoming the final solution:
+                </p>
+                <dl>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Flexible forms</h2>
+                    </dt>
+                    <dd>Form autosaves so user can come back to it in their spare time</dd>
+                    <dd>Secure and private</dd>
+                    <dd>Make the form flexible enough to handle supporting documents (itineraries, pricing guide, etc)</dd>
+                    <dd>Allow users to input open-ended questions to ask clients</dd>
+                    <dd>Forms must provide clear examples</dd>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>The feedback loop</h2>
+                    </dt>
+                    <dd>Let users to read and respond to feedback on their own time</dd>
+                    <dd>Users can revise their original submissions</dd>
+                    <dd>Reviewers can edit their original submission to add feedback</dd>
+                    <dd>Store all of their experiences in one place</dd>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span>Guiding the user</h2>
+                    </dt>
+                    <dd>Any user, even one that was not part of the initial call, can easily figure out the expectations for
+                        the forms</dd>
+                    <dd>Next steps are clearly outlined</dd>
+                    <dd>Users know where to reference next steps</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="icon-flex">
+            <img class="icon" src="../images/icons/docs.png">
+            <img class="icon" src="../images/icons/typeform.svg">
+            <img class="icon" src="../images/icons/drive.png">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>SOLUTION</h1>
+            </div>
+            <div class="row">
+                <p>
+                    The final solution was more flexible than the prior solution and tackled three main issues: the forms, the feedback loop,
+                    and the user guide.
+                    <br>
+                </p>
+                <br>
+
+                <h2>1. FORMS REIMAGINED</h2>
+                <br>
+
+                <div id="slider">
+                    <a href="#" class="control_next">&#8250;</a>
+                    <a href="#" class="control_prev">&#8249;</a>
+                    <ul>
+                        <li>
+                            <img class="form" src="../images/yvnt/form1.png">
+                        </li>
+                        <li>
+                            <img class="form" src="../images/yvnt/form2.png">
+                        </li>
+                        <li>
+                            <img class="form" src="../images/yvnt/form3.png">
+                        </li>
+                        <li>
+                            <img class="form" src="../images/yvnt/form4.png">
+                        </li>
+                        <li>
+                            <img class="form" src="../images/yvnt/form5.png">
+                        </li>
+                    </ul>
+                </div>
+
+                <p>
+                    The forms were recreated using Google Docs which provided several advantages:
+                </p>
+
+                <dl>
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span> Clear examples</h2>
+                    </dt>
+                    <dd>
+                        The form also functioned as a tutorial and was broken into several sections. Vendors could look through the examples, complete
+                        one part, then jump to the next section when they were ready.
+                    </dd>
+                    <dd>Each question came with a fictional example to show users how to structure their answers, effectively
+                        walking them through the process.
+                    </dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow"></span> Open-ended &amp; inclusive </h2>
+                    </dt>
+                    <dd>
+                        Prior to an experience, vendors asked their clients clarifying questions in order to tailor the event to their needs. They
+                        asked a combination of open-ended, multiple-choice, and yes or no questions. The open-ended nature
+                        of the new form worked for each of our vendors as they had enough room to ask as many questions as
+                        they needed to personalize the experience.
+                        <b>When this step was moved online, instead of over the phone, I ended up getting more thoughtful and
+                            complete answers, as the vendors did not feel rushed.</b>
+                    </dd>
+                    <dd>
+                        This document was stored in a shared drive folder, which was unique to the vendor. For security purposes the folder could
+                        only be accessed by the vendor and the YVNT team. If the vendor had any other supporting documents,
+                        they stored them in the folder along with the document for their experience. It was much easier to
+                        organize and store multiple experiences along with their respective supporting documents.
+                    </dd>
+                    <dd>
+                        Multiple users were now able to edit the document, and it was easy to pinpoint who made each change as the history of each
+                        of the edits was saved.
+                    </dd>
+
+                    <dt>
+                        <h2>
+                            <span class="arrow">24/7 access</span>
+                        </h2>
+                    </dt>
+                    <dd>
+                        By storing the answers in a Google doc, the answers were automatically saved and the vendor could access them whenever they
+                        needed.
+                    </dd>
+                </dl>
+
+                <h2>A/B Testing</h2>
+                <br>
+                <p>
+                    When the living document solution was implemented, the profile and experience creation form were combined into a single document.
+                    I noticed that the vendors were taking a longer time to get started with the process, perhaps because
+                    it felt like a daunting task. I decided to test a separate version, where the profile portion would be
+                    submitted through Typeform, and the experience portion would be completed through the Google Doc.
+                    <br>
+                    <br> I initially hypothesized the users would find it bothersome to have to complete the forms in two spots,
+                    but I was surprised with results. Of the users in the hybrid group,
+                    <b>80% completed the profile form first, and all of them went on to complete the second form.</b> In comparison,
+                    the group that only used Google Docs only completed both parts 70% of the time. Granted, my sample size
+                    was only 20 vendors, so my results might not have been the most accurate, but I was able to test quickly
+                    and put the better solution in motion.
+
+                    <h3 class="text-spacing">By breaking up the process into manageable chunks, users felt a sense of completion and were motivated
+                        to complete the next steps.</h3>
+
+                    On average the profile form took 10 minutes for the vendors to fill out. The information on this form included contact information,
+                    their biography, and other personal information that was not likely to change.
+                    <b>This made the profile form a good candidate for Typeform, rather than Google Docs which was more conducive
+                        to change.</b> As an added bonus, I could download the responses from Typeform as an Excel spreadsheet,
+                    which integrated nicely into my workflow.
+                </p>
+                <br>
+
+                <h2>2. FEEDBACK SIMPLIFIED</h2>
+
+                <img class="img-responsive" src="../images/yvnt/comment.png">
+                <p>
+                    Google Docs lends itself well to giving feedback and making the necessary changes. While I evaluated experiences, I used
+                    the commenting feature to note potential issues and areas where I needed more clarification.
+
+                    <br>
+                    <br> Vendors responded to these comments, and resolved them as they were addressed. Vendors made the appropriate
+                    changes and were able to look through feedback on their own time.
+                    <b>We no longer needed to coordinate and schedule calls to go over feedback.</b> I only needed to schedule
+                    calls in specific cases where the experience was not fully flushed out by the vendor.
+                </p>
+                <br>
+
+                <h2>3. GUIDED OBJECTIVES</h2>
+                <div class="scroll-container">
+                    <img id="infographic" src="../images/yvnt/info.png">
+                </div>
+                <p>
+                    If the vendor had an assistant or co-worker fill out the forms, we needed a way to communicate each step of the onboarding
+                    process. This was achieved through an infographic that I created and attached in the onboarding welcome
+                    email. It was a fun, visual way for the users to reference all the steps and could be easily shared with
+                    colleagues.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <h1>REFLECTION</h1>
+            </div>
+            <div class="row">
+                <p>
+                    The new onboarding process averaged
+                    <b>4-5 days</b>, cutting down onboarding time by one week. The completion rate increased from
+                    <b>60% to 90%</b>, with only 1 out of 10 vendors backing out of the process.
+                    <br>
+
+
+                    <br> There were still some inefficiencies that needed to be addressed.
+                    <b>Exporting the information on the Google Docs was impossible to do efficiently, and this would become
+                        even more challenging at scale.</b> In the future we had plans to handle all of this through a custom
+                    built marketplace.
+
+                    <br>
+                    <br>This solution worked very well for me in my workflow, because
+                    <b>I could integrate the downloaded vendor data from Typeform into Trello, where I was tracking each vendor
+                        through my pipeline.</b> I also noticed that I had more time to gather vendor leads, as I did not
+                    have to spend as much time on the phone answering questions and giving feedback. It was great to be able
+                    to work from the same document at our convenience, and have the ability to track the history of what
+                    had been discussed. I found that I was more productive, less stressed, and able to spend more time engaging
+                    with vendors, growing our network.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            <div id="footer-left">
+                    <div class="align-center">
+                        <div class="email">
+        
+                            <h2>LET'S TALK</h2>
+                            <a href="mailto:hello@geenah.com" target="_top">
+                                <h1>
+                                    <span class="slide-text">hello@geenah.com</span>
+                                </h1>
+                            </a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                            <h2> &mdash;
+                                <span class="slide-text">LinkedIn</span>
+                            </h2>
+                        </a>
+                        <a href="https://github.com/mleegina">
+                            <h2> &mdash;
+                                <span class="slide-text">Github</span>
+                            </h2>
+                        </a>
+                        <a href="https://codepen.io/geenah/">
+                            <h2>&mdash;
+                                <span class="slide-text">Codepen</span>
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+
+        <div id="footer-right">
+            <a href="./landy.html">
+                <div id="next" class="color-two">
+                    <div class="align-left">
+                        <h2>VIEW NEXT</h2>
+                        <h1>Landy</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/slideshow.js"></script>
+
+</body>
+
+</html>

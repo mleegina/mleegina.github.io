@@ -2,139 +2,158 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <title>Gina Lee</title>
     <meta name="author" content="Gina Lee">
     <meta name="description" content="Gina Lee's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100|Lustria" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Catamaran|Montserrat|Open+Sans:300,400,700" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124170044-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124170044-1');
+</script>
+
+
 </head>
 
-<body>
+<body id="home-splash">
+
+    <div id="sticky-nav">
+        <div id="logo">
+            <a href="">
+                <img class="logo-icon" src="images/logo.png">
+            </a>
+        </div>
+
+        <div id="hamburger" onclick="toggleNav();">
+            <div class="line black"></div>
+            <div class="line black"></div>
+        </div>
+
+        <div id="nav-panel">
+            <div id="nav-content">
+                <div id="nav-logo">
+                    <a href="">
+                        <img class="logo-icon" src="images/logo.png">
+
+                    </a>
+                </div>
+
+                <div id="nav-links">
+                    <a href="">
+                        <h1>
+                            <span class="slide-text">Home</span>
+                        </h1>
+                    </a>
+                    <a href="pages/about.html">
+                        <h1>
+                            <span class="slide-text">About</span>
+                        </h1>
+                    </a>
+                    <a href="mailto:hello@geenah.com" target="_top">
+                        <h1>
+                            <span class="slide-text">Contact</span>
+                        </h1>
+                    </a>
+                </div>
+                <div id="other-links">
+                    <h2 id="links-heading">Find me on</h2>
+
+                    <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
+                        <h2> &mdash;
+                            <span class="slide-text">LinkedIn</span>
+                        </h2>
+                    </a>
+                    <a href="https://github.com/mleegina">
+                        <h2> &mdash;
+                            <span class="slide-text">Github</span>
+                        </h2>
+                    </a>
+                    <a href="https://codepen.io/geenah/">
+
+                        <h2>&mdash;
+                            <span class="slide-text">Codepen</span>
+                        </h2>
+                    </a>
+                </div>
+                <hr>
+                <div id="project-x-scroll">
+
+                    <a href="pages/yvnt.html">
+                        <div class="project-preview">
+                            <img src="images/nav/yvnt.png">
+                            <h2>YVNT</h2>
+                            <hr>
+                            <p>Improving the onboarding process</p>
+                        </div>
+                    </a>
+                    <a href="pages/landy.html">
+                        <div class="project-preview">
+                            <img src="images/nav/landy.png">
+                            <h2>Landy</h2>
+                            <hr>
+                            <p>Empowering students to make educated off-campus housing decisions</p>
+                        </div>
+                    </a>
+                    <a href="pages/ferrisacres.html">
+                        <div class="project-preview">
+                            <img src="images/nav/fa2.png">
+                            <h2>Ferris Acres</h2>
+                            <hr>
+                            <p>The benefits of an online ordering system</p>
+                        </div>
+                    </a>
+                    <a href="pages/psychedelicatessen.html">
+                        <div class="project-preview">
+                            <img src="images/nav/bagel1.png">
+                            <h2>Psychedelicatessen</h2>
+                            <hr>
+                            <p>Designing an inventory management system</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stripes">
+        <div class="stripe scale-in-ver-bottom"></div>
+        <div class="stripe scale-in-ver-top-d"></div>
+        <div class="stripe scale-in-ver-top"></div>
+    </div>
 
     <div class="container">
         <div id="landing">
             <div id="welcome">
 
-                <div id="fade-top">
-                    <h1>Hi, I'm Gina.</h1>
-                    <br>
-                </div>
-
-                <div id="fade-bottom">
-                    <h3>I'm a front-end developer and designer.
-                        <br>Currently romping around Seattle.
-                        <br>
+                <div class="slide-in-left-d">
+                    <h3>Hi I'm Gina, <br>a
+                        <span class="project-title">product manager</span>
+                        <br> passionate about people,
+                        <br> design, and entrepreneurship.
                     </h3>
-                    <br>
-
-                    <div id="favorites">
-                        <p>
-                            <br>
-                            <span id="underline">
-                                <span id="current-month"></span>
-                                <span id="heart">&#x2661;</span>'s:</span>
-                            <a href="https://99percentinvisible.org/">
-                                <span class="highlight">99% Invisible,</span>
-                            </a>
-                            <a href="https://www.amazon.com/Kafka-Shore-Haruki-Murakami/dp/1400079276">
-                                <span class="highlight">Kafka on the Shore</span>
-                            </a>
-                        </p>
-                    </div>
+                    <hr>
                 </div>
-
-            </div>
-        </div>
-
-        <h2>
-            <span>Projects</span>
-        </h2>
-
-        <div id="projects-list">
-            <div class="row">
-                <a href="pages/tweetanalysis.html">
-                    <span class="highlight">
-                        <h3>Tweet Analysis</h3>
-                    </span>
-                    <p>MEAN Stack</p>
-                </a>
-            </div>
-
-            <div class="row">
-                <a href="pages/foodfinder.html">
-                    <span class="highlight">
-                        <h3>Food Finder</h3>
-                    </span>
-                    <p>Angular</p>
-                </a>
-            </div>
-
-            <!-- <div class="row">
-                <a href="pages/weather.html">
-                    <span class="highlight">
-                        <h3>Rain or Shine?</h3>
-                    </span>
-                    <p>HTML/CSS/JS</p>
-                </a>
-            </div> -->
-
-            <div class="row">
-                <a href="pages/realestate.html">
-                    <span class="highlight">
-                        <h3>SF Real Estate</h3>
-                    </span>
-                    <p>R</p>
-                </a>
-            </div>
-
-            <div class="row">
-                <a href="pages/trailfinder.html">
-                    <span class="highlight">
-                        <h3>Trail Finder</h3>
-                    </span>
-                    <p>HTML/CSS/JS</p>
-                </a>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <h2>
-                <span>Say Hello</span>
-            </h2>
-
-            <div class="contact">
-                <a class="email" href="mailto:hello@geenah.com" target="_top">
-                    <span class="highlight-white">
-                        <h3>hello@geenah.com</h3>
-                    </span>
-                </a>
-
-                <div class="social-links">
-                    <a href="https://codepen.io/geenah/">
-                        <img class="grow" alt="Codepen icon" src="images/icons/cpdark.png" height="30px" width="30px">
-                    </a>
-                    <a href="https://www.linkedin.com/in/gina-lee-45377b115/">
-                        <img class="grow" alt="LinkedIn icon" src="images/icons/linkedin.png" height="30px" width="30px">
-                    </a>
-                    <a href="https://github.com/mleegina">
-                        <img class="grow" alt="GitHub icon" src="images/icons/git.png" height="30px" width="30px">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/navigation.js"></script>
 
 </body>
 

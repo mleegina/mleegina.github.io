@@ -1,24 +1,3 @@
-// Function to get the current month to display on favorites
-(function getMonth() {
-  var months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-
-  var date = new Date();
-  var m = months[date.getMonth()];
-  document.getElementById("current-month").innerHTML = m;
-})();
 
 // Function to check to see if element is in viewport
 (function($) {
@@ -36,7 +15,49 @@ $(window).scroll(function(event) {
   $(".row").each(function(i, el) {
     var el = $(el);
     if (el.isInViewport(true)) {
-      el.addClass("slide");
+      // el.addClass("slide");
+      el.addClass("fade-in-right-more");
+
     }
   });
+});
+
+// Smooth scroll 
+// $("a[href^='#']").click(function(e) {
+// 	e.preventDefault();
+
+// 	$("body, html").animate({
+// 		scrollTop: $($(this).attr("href")).offset().top
+// 	}, 500,'linear' );
+// });
+
+function copyEmail(value) {
+  var tempInput = document.createElement("input");
+  tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+  tempInput.value = value;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
+
+
+
+// Clipboard
+
+// var clipboard = new Clipboard('.test');
+
+// clipboard.on('success', function(e) {
+// 	var btn = $(e.trigger);
+//   setTooltip(btn, 'Copied');
+//   hideTooltip(btn);
+// });
+
+$(function () {
+  $(document).scroll(function () {
+
+    var $nav = $("#hamburger");
+    var $header = $("#project-header");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $header.height());
+	});
 });
